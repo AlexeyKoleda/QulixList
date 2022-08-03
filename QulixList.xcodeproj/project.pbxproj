@@ -16,6 +16,7 @@
 		FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F3289A782A00438944 /* AppListModel.swift */; };
 		FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F7289A7CAC00438944 /* NetworkService.swift */; };
 		FAC4F2FC289A7FF300438944 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2FB289A7FF300438944 /* Colors.xcassets */; };
+		FAC4F301289A888200438944 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F300289A888200438944 /* UIColor+Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FAC4F2F3289A782A00438944 /* AppListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListModel.swift; sourceTree = "<group>"; };
 		FAC4F2F7289A7CAC00438944 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FAC4F2FB289A7FF300438944 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FAC4F300289A888200438944 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		FAC4F2D5289A739700438944 /* QulixList */ = {
 			isa = PBXGroup;
 			children = (
+				FAC4F2FF289A886C00438944 /* Extension */,
 				FAC4F2FD289A80D700438944 /* Resourses */,
 				FAC4F2EE289A773000438944 /* Core */,
 				FAC4F2EB289A75EA00438944 /* Utils */,
@@ -118,18 +121,18 @@
 		FAC4F2FD289A80D700438944 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
-				FAC4F2FE289A80ED00438944 /* Generated */,
 				FAC4F2DF289A739800438944 /* Assets.xcassets */,
 				FAC4F2FB289A7FF300438944 /* Colors.xcassets */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		FAC4F2FE289A80ED00438944 /* Generated */ = {
+		FAC4F2FF289A886C00438944 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FAC4F300289A888200438944 /* UIColor+Theme.swift */,
 			);
-			path = Generated;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +211,7 @@
 				FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */,
 				FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */,
 				FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */,
+				FAC4F301289A888200438944 /* UIColor+Theme.swift in Sources */,
 				FAC4F2D9289A739700438944 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
