@@ -20,6 +20,7 @@
 		FAC4F303289A8AA900438944 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F302289A8AA900438944 /* AppListView.swift */; };
 		FAC4F305289A8B3400438944 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F304289A8B3400438944 /* UIView+Gradient.swift */; };
 		FAC4F30B289AAB1F00438944 /* AppListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */; };
+		FAC4F312289ABA0F00438944 /* AppDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F311289ABA0F00438944 /* AppDetailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FAC4F302289A8AA900438944 /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 		FAC4F304289A8B3400438944 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 		FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewModel.swift; sourceTree = "<group>"; };
+		FAC4F311289ABA0F00438944 /* AppDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F2F3289A782A00438944 /* AppListModel.swift */,
+				FAC4F311289ABA0F00438944 /* AppDetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				FAC4F305289A8B3400438944 /* UIView+Gradient.swift in Sources */,
 				FAC4F2D7289A739700438944 /* AppDelegate.swift in Sources */,
 				FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */,
+				FAC4F312289ABA0F00438944 /* AppDetailsModel.swift in Sources */,
 				FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */,
 				FAC4F303289A8AA900438944 /* AppListView.swift in Sources */,
 				FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */,
