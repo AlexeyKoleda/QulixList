@@ -7,13 +7,6 @@
 
 import Foundation
 
-enum RequestError: Error {
-    case clientError
-    case serverError
-    case noData
-    case dataDecodingError
-}
-
 enum DataStatus {
     case success
     case empty
@@ -26,7 +19,7 @@ protocol NetworkService {
     func getAppDetails(for appId: String, completion: @escaping ((AppDetailsResponce?, DataStatus) -> Void))
 }
 
-class NetworkServiceImplementation: NetworkService {
+final class NetworkServiceImplementation: NetworkService {
     
     // MARK: Requests
     func downloadImage(url: String, completion: @escaping ((Data) -> Void)) {
@@ -57,6 +50,25 @@ class NetworkServiceImplementation: NetworkService {
             case .failure(let error):
                 completion([AppModel](), .error)
                 print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func getAppDetails(for appId: String, completion: @escaping ((AppDetailsResponce?, DataStatus) -> Void)) {
+        let url = URLFactory.makeAppDetailsURL(appId: appId)
+        let request = configureRequest(for: url)
+        makeUrlRequest(request) { (result: Result<AppDetailsResponce, RequestError>) in
+            switch result {
+            case .success(let result):
+                if let app = result.appDetails,
+                   app.success {
+                    completion(result, .success)
+                } else {
+                    completion(nil, .empty)
+                }
+            case .failure(let error):
+                print(error)
+                completion(nil, .error)
             }
         }
     }
@@ -102,6 +114,13 @@ class NetworkServiceImplementation: NetworkService {
         let jsonDecoder = JSONDecoder()
         let decodedData = try? jsonDecoder.decode(T.self, from: data)
         return decodedData
+    }
+    
+    private enum RequestError: Error {
+        case clientError
+        case serverError
+        case noData
+        case dataDecodingError
     }
 }
 

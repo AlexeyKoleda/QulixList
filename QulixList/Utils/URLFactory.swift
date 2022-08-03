@@ -25,5 +25,10 @@ final class URLFactory {
     static func makeAppListURL() -> URL {
         return makeURL(host: "api.steampowered.com", path: "/ISteamApps/GetAppList/v2/")
     }
-
+    
+    static func makeAppDetailsURL(appId: String) -> URL {
+        var queryItems: [URLQueryItem] = []
+        queryItems.append(URLQueryItem(name: "appids", value: appId))
+        return makeURL(host: "store.steampowered.com", path: "/api/appdetails", queryItems: queryItems)
+    }
 }
