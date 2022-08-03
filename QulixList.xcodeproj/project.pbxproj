@@ -15,6 +15,7 @@
 		FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2EC289A75F700438944 /* URLFactory.swift */; };
 		FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F3289A782A00438944 /* AppListModel.swift */; };
 		FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F7289A7CAC00438944 /* NetworkService.swift */; };
+		FAC4F2FC289A7FF300438944 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2FB289A7FF300438944 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FAC4F2EC289A75F700438944 /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
 		FAC4F2F3289A782A00438944 /* AppListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListModel.swift; sourceTree = "<group>"; };
 		FAC4F2F7289A7CAC00438944 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FAC4F2FB289A7FF300438944 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +62,10 @@
 		FAC4F2D5289A739700438944 /* QulixList */ = {
 			isa = PBXGroup;
 			children = (
+				FAC4F2FD289A80D700438944 /* Resourses */,
 				FAC4F2EE289A773000438944 /* Core */,
 				FAC4F2EB289A75EA00438944 /* Utils */,
 				FAC4F2EA289A73E900438944 /* App */,
-				FAC4F2DF289A739800438944 /* Assets.xcassets */,
 				FAC4F2E1289A739800438944 /* LaunchScreen.storyboard */,
 				FAC4F2E4289A739800438944 /* Info.plist */,
 			);
@@ -111,6 +113,23 @@
 				FAC4F2F3289A782A00438944 /* AppListModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FAC4F2FD289A80D700438944 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4F2FE289A80ED00438944 /* Generated */,
+				FAC4F2DF289A739800438944 /* Assets.xcassets */,
+				FAC4F2FB289A7FF300438944 /* Colors.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		FAC4F2FE289A80ED00438944 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC4F2FC289A7FF300438944 /* Colors.xcassets in Resources */,
 				FAC4F2E3289A739800438944 /* LaunchScreen.storyboard in Resources */,
 				FAC4F2E0289A739800438944 /* Assets.xcassets in Resources */,
 			);
