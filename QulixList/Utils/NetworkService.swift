@@ -34,15 +34,22 @@ class NetworkService {
         }.resume()
     }
     
-    static func getAppList(_ completion: @escaping ([AppModel]) -> Void) {
+    static func getAppList(_ completion: @escaping ([AppModel], DataStatus) -> Void) {
         let url = URLFactory.makeAppListURL()
         let request = configureRequest(for: url)
         makeUrlRequest(request) { (result: Result<AppListResponce, RequestError>) in
             switch result {
             case .success(let successValue):
                 let apps = successValue.appList.apps
-                completion(apps)
+                if apps.count == 0 {
+                    completion([AppModel](), .empty)
+                    return
+                } else {
+                    completion(apps.filter { $0.name != "" }, .success)
+                }
+                
             case .failure(let error):
+                completion([AppModel](), .error)
                 print(error.localizedDescription)
             }
         }

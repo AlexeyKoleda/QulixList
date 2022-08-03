@@ -12,15 +12,14 @@ extension UIColor {
     static let theme = ColorTheme()
     
     struct ColorTheme {
-        let textColor = UIColor(named: "textColor")
-        let additionalTextColor = UIColor(named: "additionalTextColor")
+        let additionalTextColor = UIColor(named: "additionalTextColor")!
         
-        let lightBackgroundColor = UIColor(named: "lightBackgroundColor")
-        let darkBackgroundColor = UIColor(named: "darkBackgroundColor")
+        let lightBackgroundColor = UIColor(named: "lightBackgroundColor")!
+        let darkBackgroundColor = UIColor(named: "darkBackgroundColor")!
         
-        let navigationBarColor = UIColor(named: "navigationBarColor")
-        let discountPriceColor = UIColor(named: "discountPriceColor")
-        let linkColor = UIColor(named: "linkColor")
+        let navigationBarColor = UIColor(named: "navigationBarColor")!
+        let discountPriceColor = UIColor(named: "discountPriceColor")!
+        let linkColor = UIColor(named: "linkColor")!
     }
 }
 

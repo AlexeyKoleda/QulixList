@@ -17,6 +17,9 @@
 		FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F7289A7CAC00438944 /* NetworkService.swift */; };
 		FAC4F2FC289A7FF300438944 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2FB289A7FF300438944 /* Colors.xcassets */; };
 		FAC4F301289A888200438944 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F300289A888200438944 /* UIColor+Theme.swift */; };
+		FAC4F303289A8AA900438944 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F302289A8AA900438944 /* AppListView.swift */; };
+		FAC4F305289A8B3400438944 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F304289A8B3400438944 /* UIView+Gradient.swift */; };
+		FAC4F30B289AAB1F00438944 /* AppListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FAC4F2F7289A7CAC00438944 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FAC4F2FB289A7FF300438944 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FAC4F300289A888200438944 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		FAC4F302289A8AA900438944 /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
+		FAC4F304289A8B3400438944 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
+		FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F2DA289A739700438944 /* AppListViewController.swift */,
+				FAC4F302289A8AA900438944 /* AppListView.swift */,
+				FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */,
 			);
 			path = AppList;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F300289A888200438944 /* UIColor+Theme.swift */,
+				FAC4F304289A8B3400438944 /* UIView+Gradient.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -207,12 +216,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC4F2DB289A739700438944 /* AppListViewController.swift in Sources */,
+				FAC4F305289A8B3400438944 /* UIView+Gradient.swift in Sources */,
 				FAC4F2D7289A739700438944 /* AppDelegate.swift in Sources */,
 				FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */,
 				FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */,
+				FAC4F303289A8AA900438944 /* AppListView.swift in Sources */,
 				FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */,
 				FAC4F301289A888200438944 /* UIColor+Theme.swift in Sources */,
 				FAC4F2D9289A739700438944 /* SceneDelegate.swift in Sources */,
+				FAC4F30B289AAB1F00438944 /* AppListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
