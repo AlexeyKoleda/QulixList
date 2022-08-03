@@ -11,8 +11,14 @@ class AppListViewModel {
     var appList = [AppModel]()
     var filteredAppList = [AppModel]()
     
+    let networkService: NetworkService
+    
+    init(networkService: NetworkService) {
+        self.networkService = networkService
+    }
+    
     func loadAppList(_ completion: @escaping ([AppModel], DataStatus) -> Void) {
-        NetworkService.getAppList() { [weak self] (appList, dataStatus) in
+        networkService.getAppList() { [weak self] (appList, dataStatus) in
             self?.appList = appList
             self?.filteredAppList = appList
             completion(appList, dataStatus)

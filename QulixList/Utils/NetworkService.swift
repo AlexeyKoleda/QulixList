@@ -20,10 +20,16 @@ enum DataStatus {
     case error
 }
 
-class NetworkService {
+protocol NetworkService {
+    func downloadImage(url: String, completion: @escaping ((Data) -> Void))
+    func getAppList(_ completion: @escaping (([AppModel], DataStatus) -> Void))
+    func getAppDetails(for appId: String, completion: @escaping ((AppDetailsResponce?, DataStatus) -> Void))
+}
+
+class NetworkServiceImplementation: NetworkService {
     
     // MARK: Requests
-    static func downloadImage(url: String, completion: @escaping ((Data) -> Void)) {
+    func downloadImage(url: String, completion: @escaping ((Data) -> Void)) {
         guard let url = URL(string: url) else { return }
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             guard let data = data,
@@ -34,7 +40,7 @@ class NetworkService {
         }.resume()
     }
     
-    static func getAppList(_ completion: @escaping ([AppModel], DataStatus) -> Void) {
+    func getAppList(_ completion: @escaping ([AppModel], DataStatus) -> Void) {
         let url = URLFactory.makeAppListURL()
         let request = configureRequest(for: url)
         makeUrlRequest(request) { (result: Result<AppListResponce, RequestError>) in
@@ -56,7 +62,7 @@ class NetworkService {
     }
     
     // MARK: Private methods
-    private static func configureRequest(for url: URL) -> URLRequest {
+    private func configureRequest(for url: URL) -> URLRequest {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -64,7 +70,7 @@ class NetworkService {
         return request
     }
     
-    private static func makeUrlRequest<T: Decodable>(_ request: URLRequest, resultHandler: @escaping (Result<T, RequestError>) -> Void) {
+    private func makeUrlRequest<T: Decodable>(_ request: URLRequest, resultHandler: @escaping (Result<T, RequestError>) -> Void) {
         let urlTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard error == nil else {
                 resultHandler(.failure(.clientError))
@@ -92,7 +98,7 @@ class NetworkService {
         urlTask.resume()
     }
     
-    private static func decodedData<T: Decodable>(_ data: Data) -> T? {
+    private func decodedData<T: Decodable>(_ data: Data) -> T? {
         let jsonDecoder = JSONDecoder()
         let decodedData = try? jsonDecoder.decode(T.self, from: data)
         return decodedData
