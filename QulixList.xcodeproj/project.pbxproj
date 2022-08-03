@@ -13,6 +13,7 @@
 		FAC4F2E0289A739800438944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2DF289A739800438944 /* Assets.xcassets */; };
 		FAC4F2E3289A739800438944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2E1289A739800438944 /* LaunchScreen.storyboard */; };
 		FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2EC289A75F700438944 /* URLFactory.swift */; };
+		FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F3289A782A00438944 /* AppListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FAC4F2E2289A739800438944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC4F2E4289A739800438944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC4F2EC289A75F700438944 /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
+		FAC4F2F3289A782A00438944 /* AppListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F2EF289A773B00438944 /* AppList */,
+				FAC4F2F2289A781300438944 /* Models */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -97,6 +100,14 @@
 				FAC4F2DA289A739700438944 /* AppListViewController.swift */,
 			);
 			path = AppList;
+			sourceTree = "<group>";
+		};
+		FAC4F2F2289A781300438944 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4F2F3289A782A00438944 /* AppListModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				FAC4F2DB289A739700438944 /* AppListViewController.swift in Sources */,
 				FAC4F2D7289A739700438944 /* AppDelegate.swift in Sources */,
 				FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */,
+				FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */,
 				FAC4F2D9289A739700438944 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
