@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppListRequest: Decodable {
+struct AppListResponce: Decodable {
     let appList: AppListModel
     
     enum CodingKeys: String, CodingKey {
