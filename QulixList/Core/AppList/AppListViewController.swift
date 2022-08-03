@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AppListViewController.swift
 //  QulixList
 //
 //  Created by Alexey Koleda on 03.08.2022.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AppListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+  
     }
 
 
