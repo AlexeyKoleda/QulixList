@@ -13,14 +13,19 @@
 		FAC4F2E0289A739800438944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2DF289A739800438944 /* Assets.xcassets */; };
 		FAC4F2E3289A739800438944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2E1289A739800438944 /* LaunchScreen.storyboard */; };
 		FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2EC289A75F700438944 /* URLFactory.swift */; };
-		FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F3289A782A00438944 /* AppListModel.swift */; };
+		FAC4F2F4289A782A00438944 /* AppListResponceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F3289A782A00438944 /* AppListResponceModel.swift */; };
 		FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2F7289A7CAC00438944 /* NetworkService.swift */; };
 		FAC4F2FC289A7FF300438944 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2FB289A7FF300438944 /* Colors.xcassets */; };
 		FAC4F301289A888200438944 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F300289A888200438944 /* UIColor+Theme.swift */; };
 		FAC4F303289A8AA900438944 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F302289A8AA900438944 /* AppListView.swift */; };
 		FAC4F305289A8B3400438944 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F304289A8B3400438944 /* UIView+Gradient.swift */; };
 		FAC4F30B289AAB1F00438944 /* AppListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */; };
-		FAC4F312289ABA0F00438944 /* AppDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F311289ABA0F00438944 /* AppDetailsModel.swift */; };
+		FAC4F312289ABA0F00438944 /* AppDetailsResponceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F311289ABA0F00438944 /* AppDetailsResponceModel.swift */; };
+		FAC4F315289AC5FE00438944 /* AppDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F314289AC5FE00438944 /* AppDetailsViewController.swift */; };
+		FAC4F317289AC60800438944 /* AppDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F316289AC60800438944 /* AppDetailsView.swift */; };
+		FAC4F319289AC61200438944 /* AppDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F318289AC61200438944 /* AppDetailsViewModel.swift */; };
+		FAC4F31B289ACCAC00438944 /* DetailedAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F31A289ACCAC00438944 /* DetailedAppModel.swift */; };
+		FAC4F31D289ACE6100438944 /* CustomDateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F31C289ACE6100438944 /* CustomDateFormater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +37,19 @@
 		FAC4F2E2289A739800438944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC4F2E4289A739800438944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC4F2EC289A75F700438944 /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
-		FAC4F2F3289A782A00438944 /* AppListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListModel.swift; sourceTree = "<group>"; };
+		FAC4F2F3289A782A00438944 /* AppListResponceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListResponceModel.swift; sourceTree = "<group>"; };
 		FAC4F2F7289A7CAC00438944 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FAC4F2FB289A7FF300438944 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FAC4F300289A888200438944 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		FAC4F302289A8AA900438944 /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 		FAC4F304289A8B3400438944 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 		FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewModel.swift; sourceTree = "<group>"; };
-		FAC4F311289ABA0F00438944 /* AppDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsModel.swift; sourceTree = "<group>"; };
+		FAC4F311289ABA0F00438944 /* AppDetailsResponceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsResponceModel.swift; sourceTree = "<group>"; };
+		FAC4F314289AC5FE00438944 /* AppDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsViewController.swift; sourceTree = "<group>"; };
+		FAC4F316289AC60800438944 /* AppDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsView.swift; sourceTree = "<group>"; };
+		FAC4F318289AC61200438944 /* AppDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsViewModel.swift; sourceTree = "<group>"; };
+		FAC4F31A289ACCAC00438944 /* DetailedAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAppModel.swift; sourceTree = "<group>"; };
+		FAC4F31C289ACE6100438944 /* CustomDateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 			children = (
 				FAC4F2EC289A75F700438944 /* URLFactory.swift */,
 				FAC4F2F7289A7CAC00438944 /* NetworkService.swift */,
+				FAC4F31C289ACE6100438944 /* CustomDateFormater.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -105,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F2EF289A773B00438944 /* AppList */,
+				FAC4F313289AC37A00438944 /* AppDetails */,
 				FAC4F2F2289A781300438944 /* Models */,
 			);
 			path = Core;
@@ -123,8 +135,9 @@
 		FAC4F2F2289A781300438944 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FAC4F2F3289A782A00438944 /* AppListModel.swift */,
-				FAC4F311289ABA0F00438944 /* AppDetailsModel.swift */,
+				FAC4F2F3289A782A00438944 /* AppListResponceModel.swift */,
+				FAC4F311289ABA0F00438944 /* AppDetailsResponceModel.swift */,
+				FAC4F31A289ACCAC00438944 /* DetailedAppModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +158,16 @@
 				FAC4F304289A8B3400438944 /* UIView+Gradient.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FAC4F313289AC37A00438944 /* AppDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4F314289AC5FE00438944 /* AppDetailsViewController.swift */,
+				FAC4F316289AC60800438944 /* AppDetailsView.swift */,
+				FAC4F318289AC61200438944 /* AppDetailsViewModel.swift */,
+			);
+			path = AppDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,16 +242,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC4F2DB289A739700438944 /* AppListViewController.swift in Sources */,
+				FAC4F31D289ACE6100438944 /* CustomDateFormater.swift in Sources */,
 				FAC4F305289A8B3400438944 /* UIView+Gradient.swift in Sources */,
 				FAC4F2D7289A739700438944 /* AppDelegate.swift in Sources */,
+				FAC4F31B289ACCAC00438944 /* DetailedAppModel.swift in Sources */,
 				FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */,
-				FAC4F312289ABA0F00438944 /* AppDetailsModel.swift in Sources */,
-				FAC4F2F4289A782A00438944 /* AppListModel.swift in Sources */,
+				FAC4F312289ABA0F00438944 /* AppDetailsResponceModel.swift in Sources */,
+				FAC4F317289AC60800438944 /* AppDetailsView.swift in Sources */,
+				FAC4F2F4289A782A00438944 /* AppListResponceModel.swift in Sources */,
+				FAC4F319289AC61200438944 /* AppDetailsViewModel.swift in Sources */,
 				FAC4F303289A8AA900438944 /* AppListView.swift in Sources */,
 				FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */,
 				FAC4F301289A888200438944 /* UIColor+Theme.swift in Sources */,
 				FAC4F2D9289A739700438944 /* SceneDelegate.swift in Sources */,
 				FAC4F30B289AAB1F00438944 /* AppListViewModel.swift in Sources */,
+				FAC4F315289AC5FE00438944 /* AppDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@ enum DataStatus {
 protocol NetworkService {
     func downloadImage(url: String, completion: @escaping ((Data) -> Void))
     func getAppList(_ completion: @escaping (([AppModel], DataStatus) -> Void))
-    func getAppDetails(for appId: String, completion: @escaping ((AppDetailsResponce?, DataStatus) -> Void))
+    func getAppDetails(for appId: String, completion: @escaping ((AppData?, DataStatus) -> Void))
 }
 
 final class NetworkServiceImplementation: NetworkService {
@@ -36,7 +36,7 @@ final class NetworkServiceImplementation: NetworkService {
     func getAppList(_ completion: @escaping ([AppModel], DataStatus) -> Void) {
         let url = URLFactory.makeAppListURL()
         let request = configureRequest(for: url)
-        makeUrlRequest(request) { (result: Result<AppListResponce, RequestError>) in
+        makeUrlRequest(request) { (result: Result<AppListResponceModel, RequestError>) in
             switch result {
             case .success(let successValue):
                 let apps = successValue.appList.apps
@@ -54,15 +54,15 @@ final class NetworkServiceImplementation: NetworkService {
         }
     }
     
-    func getAppDetails(for appId: String, completion: @escaping ((AppDetailsResponce?, DataStatus) -> Void)) {
+    func getAppDetails(for appId: String, completion: @escaping ((AppData?, DataStatus) -> Void)) {
         let url = URLFactory.makeAppDetailsURL(appId: appId)
         let request = configureRequest(for: url)
-        makeUrlRequest(request) { (result: Result<AppDetailsResponce, RequestError>) in
+        makeUrlRequest(request) { (result: Result<AppDetailsResponceModel, RequestError>) in
             switch result {
             case .success(let result):
                 if let app = result.appDetails,
                    app.success {
-                    completion(result, .success)
+                    completion(app.data, .success)
                 } else {
                     completion(nil, .empty)
                 }

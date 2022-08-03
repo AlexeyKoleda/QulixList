@@ -1,5 +1,5 @@
 //
-//  AppListModel.swift
+//  AppListResponceModel.swift
 //  QulixList
 //
 //  Created by Alexey Koleda on 03.08.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppListResponce: Decodable {
+struct AppListResponceModel: Decodable {
     let appList: AppListModel
     
     enum CodingKeys: String, CodingKey {

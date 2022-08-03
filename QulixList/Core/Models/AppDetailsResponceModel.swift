@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct AppDetailsResponce: Decodable {
-    let appDetails: AppDetailsModel?
+struct AppDetailsResponceModel: Decodable {
+    let appDetails: AppDetailsResult?
 
     private struct DynamicCodingKeys: CodingKey {
 
@@ -26,10 +26,10 @@ struct AppDetailsResponce: Decodable {
     init(from decoder: Decoder) throws {
 
         let container = try decoder.container(keyedBy: DynamicCodingKeys.self)
-        var details: AppDetailsModel?
+        var details: AppDetailsResult?
 
         for key in container.allKeys {
-            details = try container.decode(AppDetailsModel.self, forKey: DynamicCodingKeys(stringValue: key.stringValue)!)
+            details = try container.decode(AppDetailsResult.self, forKey: DynamicCodingKeys(stringValue: key.stringValue)!)
         }
 
         if let details = details {
@@ -40,7 +40,7 @@ struct AppDetailsResponce: Decodable {
     }
 }
 
-struct AppDetailsModel: Decodable {
+struct AppDetailsResult: Decodable {
     let success: Bool
     let data: AppData
 }

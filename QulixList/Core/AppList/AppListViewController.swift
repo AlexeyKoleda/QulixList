@@ -23,11 +23,11 @@ class AppListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Life cycle
     override func loadView() {
         view = customView
     }
 
-    // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Games"
@@ -104,7 +104,21 @@ extension AppListViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
+        let app = viewModel.filteredAppList[indexPath.row]
+        moveToDetails(app: app)
+    }
+    
+    func moveToDetails(app: AppModel) {
+        let networkService = NetworkServiceImplementation()
+        let viewModel = AppDetailsViewModel(networkService: networkService)
+        let appDetailsViewController = AppDetailsViewController(viewModel: viewModel)
+        appDetailsViewController.title = app.name
+        appDetailsViewController.appId = String(app.appId)
+       
+        navigationItem.backButtonTitle = ""
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.pushViewController(appDetailsViewController, animated: true)
     }
 }
 
