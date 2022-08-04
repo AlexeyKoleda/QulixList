@@ -32,6 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navigation = UINavigationController()
         navigation.navigationBar.prefersLargeTitles = false
+        navigation.navigationBar.tintColor = .white
         coordinator = factory.makeCoordinator(navigation: navigation)
         window?.rootViewController = navigation
         return coordinator
