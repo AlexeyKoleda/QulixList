@@ -10,19 +10,31 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var coordinator: Coordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let networkService = NetworkServiceImplementation()
-        let viewModel = AppListViewModel(networkService: networkService)
-        let viewController = AppListViewController(viewModel: viewModel)
-        let navigation = UINavigationController()
-        navigation.setViewControllers([viewController], animated: true)
-        window?.rootViewController = navigation
+        window = UIWindow(windowScene: windowScene)
+        
+        configureWindow()
+    }
+    
+    func configureWindow() {
+        let coordinator = createCoordinator()
+        coordinator.start()
+        self.coordinator = coordinator
         window?.makeKeyAndVisible()
-        window?.windowScene = windowScene
+    }
+    
+    private func createCoordinator() -> Coordinator {
+        let factory = CoordinatorFactory(configureWindow: configureWindow)
+        var coordinator: Coordinator
+        
+        let navigation = UINavigationController()
+        navigation.navigationBar.prefersLargeTitles = false
+        coordinator = factory.makeCoordinator(navigation: navigation)
+        window?.rootViewController = navigation
+        return coordinator
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

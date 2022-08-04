@@ -26,6 +26,9 @@
 		FAC4F319289AC61200438944 /* AppDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F318289AC61200438944 /* AppDetailsViewModel.swift */; };
 		FAC4F31B289ACCAC00438944 /* DetailedAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F31A289ACCAC00438944 /* DetailedAppModel.swift */; };
 		FAC4F31D289ACE6100438944 /* CustomDateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F31C289ACE6100438944 /* CustomDateFormater.swift */; };
+		FAC4F320289B04F600438944 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F31F289B04F600438944 /* ControllerFactory.swift */; };
+		FAC4F322289B06DD00438944 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F321289B06DD00438944 /* Coordinator.swift */; };
+		FAC4F324289B088800438944 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F323289B088800438944 /* CoordinatorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		FAC4F318289AC61200438944 /* AppDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsViewModel.swift; sourceTree = "<group>"; };
 		FAC4F31A289ACCAC00438944 /* DetailedAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAppModel.swift; sourceTree = "<group>"; };
 		FAC4F31C289ACE6100438944 /* CustomDateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormater.swift; sourceTree = "<group>"; };
+		FAC4F31F289B04F600438944 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		FAC4F321289B06DD00438944 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FAC4F323289B088800438944 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		FAC4F2EE289A773000438944 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FAC4F31E289B04E700438944 /* Coordinator */,
 				FAC4F2EF289A773B00438944 /* AppList */,
 				FAC4F313289AC37A00438944 /* AppDetails */,
 				FAC4F2F2289A781300438944 /* Models */,
@@ -168,6 +175,16 @@
 				FAC4F318289AC61200438944 /* AppDetailsViewModel.swift */,
 			);
 			path = AppDetails;
+			sourceTree = "<group>";
+		};
+		FAC4F31E289B04E700438944 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4F321289B06DD00438944 /* Coordinator.swift */,
+				FAC4F323289B088800438944 /* CoordinatorFactory.swift */,
+				FAC4F31F289B04F600438944 /* ControllerFactory.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,10 +264,13 @@
 				FAC4F2D7289A739700438944 /* AppDelegate.swift in Sources */,
 				FAC4F31B289ACCAC00438944 /* DetailedAppModel.swift in Sources */,
 				FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */,
+				FAC4F324289B088800438944 /* CoordinatorFactory.swift in Sources */,
 				FAC4F312289ABA0F00438944 /* AppDetailsResponceModel.swift in Sources */,
 				FAC4F317289AC60800438944 /* AppDetailsView.swift in Sources */,
+				FAC4F322289B06DD00438944 /* Coordinator.swift in Sources */,
 				FAC4F2F4289A782A00438944 /* AppListResponceModel.swift in Sources */,
 				FAC4F319289AC61200438944 /* AppDetailsViewModel.swift in Sources */,
+				FAC4F320289B04F600438944 /* ControllerFactory.swift in Sources */,
 				FAC4F303289A8AA900438944 /* AppListView.swift in Sources */,
 				FAC4F2F8289A7CAC00438944 /* NetworkService.swift in Sources */,
 				FAC4F301289A888200438944 /* UIColor+Theme.swift in Sources */,

@@ -12,10 +12,12 @@ class AppListViewController: UIViewController {
     private let customView = GamesListView()
     private let viewModel: AppListViewModel
    
+    private let goToDetails: (AppModel) -> Void
 
     // MARK: initializers
-    public init(viewModel: AppListViewModel) {
+    public init(viewModel: AppListViewModel, goToDetails: @escaping (AppModel) -> Void) {
         self.viewModel = viewModel
+        self.goToDetails = goToDetails
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -30,7 +32,6 @@ class AppListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Games"
         
         startIndicator()
         setupCustomView()
@@ -82,6 +83,7 @@ class AppListViewController: UIViewController {
 
 // MARK: TableView Data source extension
 extension AppListViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.filteredAppList.count
     }
@@ -99,6 +101,7 @@ extension AppListViewController: UITableViewDataSource {
 
 // MARK: TableView Delegate extension
 extension AppListViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
     }
@@ -106,19 +109,8 @@ extension AppListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let app = viewModel.filteredAppList[indexPath.row]
-        moveToDetails(app: app)
-    }
-    
-    func moveToDetails(app: AppModel) {
-        let networkService = NetworkServiceImplementation()
-        let viewModel = AppDetailsViewModel(networkService: networkService)
-        let appDetailsViewController = AppDetailsViewController(viewModel: viewModel)
-        appDetailsViewController.title = app.name
-        appDetailsViewController.appId = String(app.appId)
-       
-        navigationItem.backButtonTitle = ""
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.pushViewController(appDetailsViewController, animated: true)
+        goToDetails(app)
+
     }
 }
 
