@@ -6,8 +6,8 @@ Uses [Steam WepAPI](https://steamcommunity.com/dev) to get data from server.
 
 ## Sample Screenshots
 <p float="left">
-  ![Simulator Screen Shot - iPhone 13 - 2022-08-04 at 17 33 11](https://user-images.githubusercontent.com/90314974/182877483-6ccc14da-8dcb-44fd-9886-378326c5f488.png)
-  ![Simulator Screen Shot - iPhone 13 - 2022-08-04 at 17 35 42](https://user-images.githubusercontent.com/90314974/182877563-eaf05a51-3826-4342-9fe1-033bf5811d9d.png)
+    <img src="https://user-images.githubusercontent.com/90314974/182877483-6ccc14da-8dcb-44fd-9886-378326c5f488.png" alt="drawing" width="200"/>
+    <img src="[./Simulator%20Screen%20Shot%20-%202.png](https://user-images.githubusercontent.com/90314974/182877563-eaf05a51-3826-4342-9fe1-033bf5811d9d.png)" alt="drawing" width="200"/>
 </p>
 
 ## Requirements:
