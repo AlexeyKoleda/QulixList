@@ -1,8 +1,8 @@
 # QulixList
 Test app for Qulix
 ## Description:
-A simple app to display available Apps in Steam.
-Uses [Steam WepAPI](https://steamcommunity.com/dev) to get data from server.
+  A simple app to display available Apps in Steam.
+  Uses [Steam WepAPI](https://steamcommunity.com/dev) to get data from server.
 
 ## Sample Screenshots
 <p float="left">
@@ -12,8 +12,8 @@ Uses [Steam WepAPI](https://steamcommunity.com/dev) to get data from server.
 
 ## Requirements:
 - It is necessary to make an application from two modules (application design is not important):
--- list (displays any data received from the API)
--- details (you can jump from the list)
+  - list (displays any data received from the API)
+  - details (you can jump from the list)
 - Any open service (github, flickr, giphy) can be used as an API.
 - The advantage of having at least a few unit tests for any class.
 
