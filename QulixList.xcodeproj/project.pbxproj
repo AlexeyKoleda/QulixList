@@ -69,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA039068289C048D00D3B6B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4F2EF289A773B00438944 /* AppList */,
+				FAC4F313289AC37A00438944 /* AppDetails */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FAC4F2CA289A739700438944 = {
 			isa = PBXGroup;
 			children = (
@@ -88,11 +97,11 @@
 		FAC4F2D5289A739700438944 /* QulixList */ = {
 			isa = PBXGroup;
 			children = (
-				FAC4F2FF289A886C00438944 /* Extension */,
-				FAC4F2FD289A80D700438944 /* Resourses */,
+				FAC4F2EA289A73E900438944 /* App */,
 				FAC4F2EE289A773000438944 /* Core */,
 				FAC4F2EB289A75EA00438944 /* Utils */,
-				FAC4F2EA289A73E900438944 /* App */,
+				FAC4F2FD289A80D700438944 /* Resourses */,
+				FAC4F2FF289A886C00438944 /* Extension */,
 				FAC4F2E1289A739800438944 /* LaunchScreen.storyboard */,
 				FAC4F2E4289A739800438944 /* Info.plist */,
 			);
@@ -122,8 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F31E289B04E700438944 /* Coordinator */,
-				FAC4F2EF289A773B00438944 /* AppList */,
-				FAC4F313289AC37A00438944 /* AppDetails */,
+				FA039068289C048D00D3B6B8 /* View */,
 				FAC4F2F2289A781300438944 /* Models */,
 			);
 			path = Core;
