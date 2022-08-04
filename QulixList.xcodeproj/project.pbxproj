@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA039070289C055100D3B6B8 /* AppDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03906F289C055100D3B6B8 /* AppDetailsViewModelTests.swift */; };
 		FAC4F2D7289A739700438944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2D6289A739700438944 /* AppDelegate.swift */; };
 		FAC4F2D9289A739700438944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2D8289A739700438944 /* SceneDelegate.swift */; };
 		FAC4F2DB289A739700438944 /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F2DA289A739700438944 /* AppListViewController.swift */; };
@@ -28,10 +29,22 @@
 		FAC4F31D289ACE6100438944 /* CustomDateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F31C289ACE6100438944 /* CustomDateFormater.swift */; };
 		FAC4F320289B04F600438944 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F31F289B04F600438944 /* ControllerFactory.swift */; };
 		FAC4F322289B06DD00438944 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F321289B06DD00438944 /* Coordinator.swift */; };
-		FAC4F324289B088800438944 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F323289B088800438944 /* CoordinatorFactory.swift */; };
+		FAC4F324289B088800438944 /* CoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F323289B088800438944 /* CoordinatorFactoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FA039071289C055100D3B6B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC4F2CB289A739700438944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC4F2D2289A739700438944;
+			remoteInfo = QulixList;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FA03906D289C055100D3B6B8 /* QulixListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QulixListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA03906F289C055100D3B6B8 /* AppDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		FAC4F2D3289A739700438944 /* QulixList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QulixList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC4F2D6289A739700438944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC4F2D8289A739700438944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,10 +68,17 @@
 		FAC4F31C289ACE6100438944 /* CustomDateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormater.swift; sourceTree = "<group>"; };
 		FAC4F31F289B04F600438944 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		FAC4F321289B06DD00438944 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		FAC4F323289B088800438944 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		FAC4F323289B088800438944 /* CoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA03906A289C055100D3B6B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC4F2D0289A739700438944 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,10 +98,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FA03906E289C055100D3B6B8 /* QulixListTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA03906F289C055100D3B6B8 /* AppDetailsViewModelTests.swift */,
+			);
+			path = QulixListTests;
+			sourceTree = "<group>";
+		};
 		FAC4F2CA289A739700438944 = {
 			isa = PBXGroup;
 			children = (
 				FAC4F2D5289A739700438944 /* QulixList */,
+				FA03906E289C055100D3B6B8 /* QulixListTests */,
 				FAC4F2D4289A739700438944 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F2D3289A739700438944 /* QulixList.app */,
+				FA03906D289C055100D3B6B8 /* QulixListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F321289B06DD00438944 /* Coordinator.swift */,
-				FAC4F323289B088800438944 /* CoordinatorFactory.swift */,
+				FAC4F323289B088800438944 /* CoordinatorFactoryImplementation.swift */,
 				FAC4F31F289B04F600438944 /* ControllerFactory.swift */,
 			);
 			path = Coordinator;
@@ -198,6 +228,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA03906C289C055100D3B6B8 /* QulixListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA039075289C055100D3B6B8 /* Build configuration list for PBXNativeTarget "QulixListTests" */;
+			buildPhases = (
+				FA039069289C055100D3B6B8 /* Sources */,
+				FA03906A289C055100D3B6B8 /* Frameworks */,
+				FA03906B289C055100D3B6B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA039072289C055100D3B6B8 /* PBXTargetDependency */,
+			);
+			name = QulixListTests;
+			productName = QulixListTests;
+			productReference = FA03906D289C055100D3B6B8 /* QulixListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FAC4F2D2289A739700438944 /* QulixList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC4F2E7289A739800438944 /* Build configuration list for PBXNativeTarget "QulixList" */;
@@ -225,6 +273,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					FA03906C289C055100D3B6B8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FAC4F2D2289A739700438944;
+					};
 					FAC4F2D2289A739700438944 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -244,11 +296,19 @@
 			projectRoot = "";
 			targets = (
 				FAC4F2D2289A739700438944 /* QulixList */,
+				FA03906C289C055100D3B6B8 /* QulixListTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA03906B289C055100D3B6B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC4F2D1289A739700438944 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +322,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA039069289C055100D3B6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA039070289C055100D3B6B8 /* AppDetailsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC4F2CF289A739700438944 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,7 +340,7 @@
 				FAC4F2D7289A739700438944 /* AppDelegate.swift in Sources */,
 				FAC4F31B289ACCAC00438944 /* DetailedAppModel.swift in Sources */,
 				FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */,
-				FAC4F324289B088800438944 /* CoordinatorFactory.swift in Sources */,
+				FAC4F324289B088800438944 /* CoordinatorFactoryImplementation.swift in Sources */,
 				FAC4F312289ABA0F00438944 /* AppDetailsResponceModel.swift in Sources */,
 				FAC4F317289AC60800438944 /* AppDetailsView.swift in Sources */,
 				FAC4F322289B06DD00438944 /* Coordinator.swift in Sources */,
@@ -290,6 +358,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FA039072289C055100D3B6B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC4F2D2289A739700438944 /* QulixList */;
+			targetProxy = FA039071289C055100D3B6B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FAC4F2E1289A739800438944 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -302,6 +378,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA039073289C055100D3B6B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN9H6D325T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeykoleda.QulixListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QulixList.app/QulixList";
+			};
+			name = Debug;
+		};
+		FA039074289C055100D3B6B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN9H6D325T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeykoleda.QulixListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QulixList.app/QulixList";
+			};
+			name = Release;
+		};
 		FAC4F2E5289A739800438944 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,6 +589,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA039075289C055100D3B6B8 /* Build configuration list for PBXNativeTarget "QulixListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA039073289C055100D3B6B8 /* Debug */,
+				FA039074289C055100D3B6B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAC4F2CE289A739700438944 /* Build configuration list for PBXProject "QulixList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

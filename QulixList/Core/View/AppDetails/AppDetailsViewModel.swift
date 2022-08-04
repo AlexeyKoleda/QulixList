@@ -18,11 +18,11 @@ final class AppDetailsViewModel {
     }
     
     func loadAppDetails(appId: String, completion: @escaping ((DetailedAppModel) -> Void)) {
-        networkService.getAppDetails(for: appId, completion: { (appData, dataStatus) in
+        networkService.getAppDetails(for: appId, completion: { [weak self] (appData, dataStatus) in
             guard let appData = appData else { return }
             let AppDetails = AppDetails(appId: appId, appData: appData)
             let detailedAppModel = DetailedAppModel(appID: appId, appDetails: AppDetails, dataStatus: dataStatus)
-            self.detailedAppModel = detailedAppModel
+            self?.detailedAppModel = detailedAppModel
             completion(detailedAppModel)
         })
     }
