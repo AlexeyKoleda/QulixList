@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AppListViewModel {
+final class AppListViewModel {
     var appList = [AppModel]()
     var filteredAppList = [AppModel]()
     

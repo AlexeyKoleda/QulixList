@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppDetailsView: UIView {
+final class AppDetailsView: UIView {
 
     var contentView: UIView = {
         let contentView = UIView()

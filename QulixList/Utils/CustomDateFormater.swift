@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CustomDateFormater {
+final class CustomDateFormater {
 
     static var shared = CustomDateFormater()
 

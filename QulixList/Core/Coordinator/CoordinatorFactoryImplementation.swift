@@ -7,7 +7,11 @@
 
 import UIKit
 
-final class CoordinatorFactory {
+protocol CoordinatorFactory {
+    func makeCoordinator(navigation: UINavigationController) -> Coordinator
+}
+
+final class CoordinatorFactoryImplementation: CoordinatorFactory {
     
     private let configureWindow: () -> Void
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AppDetailsViewModel {
+final class AppDetailsViewModel {
     
     var detailedAppModel: DetailedAppModel?
     

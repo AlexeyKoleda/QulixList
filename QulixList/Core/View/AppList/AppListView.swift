@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GamesListView: UIView {
+final class GamesListView: UIView {
 
     var searchBar: UISearchBar = {
         let searchBar = UISearchBar()

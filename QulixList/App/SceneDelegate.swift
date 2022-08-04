@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func createCoordinator() -> Coordinator {
-        let factory = CoordinatorFactory(configureWindow: configureWindow)
+        let factory = CoordinatorFactoryImplementation(configureWindow: configureWindow)
         var coordinator: Coordinator
         
         let navigation = UINavigationController()

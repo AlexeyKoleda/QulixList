@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppDetailsViewController: UIViewController {
+final class AppDetailsViewController: UIViewController {
 
     var appId: String!
 

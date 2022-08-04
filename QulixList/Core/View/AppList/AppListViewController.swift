@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppListViewController: UIViewController {
+final class AppListViewController: UIViewController {
 
     private let customView = GamesListView()
     private let viewModel: AppListViewModel
