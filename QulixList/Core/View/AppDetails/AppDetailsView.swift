@@ -141,7 +141,7 @@ final class AppDetailsView: UIView {
     }
 
     private func startSettings() {
-        self.setGradientBackground(from: UIColor.theme.lightBackgroundColor, to: UIColor.theme.darkBackgroundColor)
+        self.backgroundColor = UIColor.theme.backgroundColor
     }
 
     private func setupContentView() {

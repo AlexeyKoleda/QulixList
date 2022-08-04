@@ -81,8 +81,7 @@ final class GamesListView: UIView {
     }
 
     private func createSubViews() {
-        self.setGradientBackground(from: UIColor.theme.lightBackgroundColor,
-                                   to: UIColor.theme.darkBackgroundColor)
+        self.backgroundColor = UIColor.theme.backgroundColor
         setupActivityIndicator()
         self.addGestureRecognizer(createOutOfSerchTap())
     }

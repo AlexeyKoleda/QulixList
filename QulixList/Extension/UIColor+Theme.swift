@@ -13,10 +13,7 @@ extension UIColor {
     
     struct ColorTheme {
         let additionalTextColor = UIColor(named: "additionalTextColor")!
-        
-        let lightBackgroundColor = UIColor(named: "lightBackgroundColor")!
-        let darkBackgroundColor = UIColor(named: "darkBackgroundColor")!
-        
+        let backgroundColor = UIColor(named: "backgroundColor")!
         let navigationBarColor = UIColor(named: "navigationBarColor")!
         let discountPriceColor = UIColor(named: "discountPriceColor")!
         let linkColor = UIColor(named: "linkColor")!

@@ -19,7 +19,6 @@
 		FAC4F2FC289A7FF300438944 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4F2FB289A7FF300438944 /* Colors.xcassets */; };
 		FAC4F301289A888200438944 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F300289A888200438944 /* UIColor+Theme.swift */; };
 		FAC4F303289A8AA900438944 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F302289A8AA900438944 /* AppListView.swift */; };
-		FAC4F305289A8B3400438944 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F304289A8B3400438944 /* UIView+Gradient.swift */; };
 		FAC4F30B289AAB1F00438944 /* AppListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */; };
 		FAC4F312289ABA0F00438944 /* AppDetailsResponceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F311289ABA0F00438944 /* AppDetailsResponceModel.swift */; };
 		FAC4F315289AC5FE00438944 /* AppDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4F314289AC5FE00438944 /* AppDetailsViewController.swift */; };
@@ -58,7 +57,6 @@
 		FAC4F2FB289A7FF300438944 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FAC4F300289A888200438944 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		FAC4F302289A8AA900438944 /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
-		FAC4F304289A8B3400438944 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 		FAC4F30A289AAB1F00438944 /* AppListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewModel.swift; sourceTree = "<group>"; };
 		FAC4F311289ABA0F00438944 /* AppDetailsResponceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsResponceModel.swift; sourceTree = "<group>"; };
 		FAC4F314289AC5FE00438944 /* AppDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsViewController.swift; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				FAC4F300289A888200438944 /* UIColor+Theme.swift */,
-				FAC4F304289A8B3400438944 /* UIView+Gradient.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -336,7 +333,6 @@
 			files = (
 				FAC4F2DB289A739700438944 /* AppListViewController.swift in Sources */,
 				FAC4F31D289ACE6100438944 /* CustomDateFormater.swift in Sources */,
-				FAC4F305289A8B3400438944 /* UIView+Gradient.swift in Sources */,
 				FAC4F2D7289A739700438944 /* AppDelegate.swift in Sources */,
 				FAC4F31B289ACCAC00438944 /* DetailedAppModel.swift in Sources */,
 				FAC4F2ED289A75F700438944 /* URLFactory.swift in Sources */,
