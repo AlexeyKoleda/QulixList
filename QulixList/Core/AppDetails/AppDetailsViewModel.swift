@@ -26,6 +26,10 @@ class AppDetailsViewModel {
             completion(detailedAppModel)
         })
     }
-    
-    
+
+    func loadImage(from url: String, completion: @escaping (Data) -> Void) {
+        networkService.downloadImage(url: url) { data in
+            completion(data)
+        }
+    }
 }

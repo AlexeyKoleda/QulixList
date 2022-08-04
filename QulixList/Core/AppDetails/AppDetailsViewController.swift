@@ -13,7 +13,6 @@ class AppDetailsViewController: UIViewController {
 
     private let customView = AppDetailsView()
     private let viewModel: AppDetailsViewModel
-    private var appModel: DetailedAppModel!
 
     // MARK: initializers
     public init(viewModel: AppDetailsViewModel) {
@@ -25,6 +24,7 @@ class AppDetailsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Life cycle
     override func loadView() {
         view = customView
     }
@@ -34,13 +34,11 @@ class AppDetailsViewController: UIViewController {
         loadData()
     }
 
-
+    // MARK: Private methods
     private func loadData() {
         viewModel.loadAppDetails(appId: appId) { [weak self] appModel in
-            self?.appModel = appModel
             DispatchQueue.main.async {
-                guard let status = self?.appModel.dataStatus else { return }
-                self?.customView.setupView(with: status)
+                self?.customView.setupView(with: appModel.dataStatus)
                 self?.updateView()
             }
         }
@@ -48,8 +46,9 @@ class AppDetailsViewController: UIViewController {
 
     private func updateView() {
         guard
-            appModel.dataStatus == .success,
-            let appInfo = appModel.appDetails
+            let detailedAppModel = viewModel.detailedAppModel,
+            detailedAppModel.dataStatus == .success,
+            let appInfo = detailedAppModel.appDetails
         else {
             return
         }
@@ -114,9 +113,8 @@ class AppDetailsViewController: UIViewController {
         customView.headerImageView.image = UIImage(named: "default_game_image")
     }
 
-    func downloadImage(from url: String, to imageView: UIImageView) {
-        let ns = NetworkServiceImplementation()
-        ns.downloadImage(url: url) { data in
+    private func downloadImage(from url: String, to imageView: UIImageView) {
+        viewModel.loadImage(from: url) { data in
             DispatchQueue.main.async { [weak self] in
                 imageView.image = UIImage(data: data)
                 self?.customView.imageViewActivityIndicator.stopAnimating()
